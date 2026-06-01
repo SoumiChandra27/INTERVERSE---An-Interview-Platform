@@ -1,0 +1,118 @@
+expected_answer,user_answer,similarity_score,expected_label,predicted_label
+"A data structure is a way of organizing and storing data efficiently.","A data structure organizes data efficiently in memory.",92.11,1,1
+"An algorithm is a step-by-step procedure to solve a problem.","Algorithm means sequence of instructions to solve problems.",90.52,1,1
+"Arrays store elements in contiguous memory locations.","Arrays store elements continuously in memory.",88.74,1,1
+"Time complexity measures execution time growth with input size.","Time complexity shows how runtime increases.",91.14,1,1
+"Space complexity measures memory usage of an algorithm.","Space complexity means memory consumption.",89.42,1,1
+"Big-O notation describes algorithm efficiency.","Big O tells algorithm performance.",87.25,1,1
+"Stack follows the Last In First Out principle.","Stack uses LIFO order.",93.17,1,1
+"Queue follows the First In First Out principle.","Queue uses FIFO order.",92.61,1,1
+"Linked list stores elements in nodes connected by pointers.","Linked list contains nodes linked together.",89.17,1,1
+"Binary tree is a tree where each node has at most two children.","Binary tree contains maximum two child nodes.",91.82,1,1
+"Linear search checks elements sequentially.","Linear search scans one by one.",88.65,1,1
+"Binary search works on sorted arrays using divide and conquer.","Binary search repeatedly halves sorted data.",92.36,1,1
+"Sorting arranges elements in a specific order.","Sorting organizes data systematically.",87.42,1,1
+"Recursion is when a function calls itself.","Recursion means self-calling function.",93.11,1,1
+"Graph is a structure of nodes and edges.","Graph contains vertices and edges.",89.64,1,1
+"BFS explores level by level while DFS explores deeply.","BFS uses queue and DFS uses stack.",84.61,1,1
+"BST stores smaller elements left and larger right.","BST organizes nodes in sorted order.",90.45,1,1
+"Searching means finding an element in data.","Searching locates target values.",87.52,1,1
+"Binary search is efficient for sorted data.","Binary search is fast on sorted arrays.",85.22,1,1
+"Quick Sort and Merge Sort are efficient sorting algorithms.","Quick sort and merge sort are popular.",83.47,1,1
+"Java is a high-level object-oriented programming language.","Java is object oriented language.",94.25,1,1
+"JVM executes Java bytecode.","JVM runs bytecode.",92.84,1,1
+"JDK provides tools to develop Java applications.","JDK includes compiler and tools.",91.27,1,1
+"JRE provides runtime environment for Java.","JRE runs Java applications.",90.66,1,1
+"Class is a blueprint for objects.","Class defines object structure.",92.55,1,1
+"Object is an instance of a class.","Object is created from class.",91.12,1,1
+"Method overloading means same method name with different parameters.","Method overloading changes parameter list.",90.18,1,1
+"Inheritance allows acquiring properties from parent class.","Inheritance promotes code reuse.",89.52,1,1
+"Polymorphism allows one interface to behave differently.","Polymorphism supports multiple forms.",88.95,1,1
+"Encapsulation binds data and methods together.","Encapsulation provides data hiding.",91.71,1,1
+"Abstraction hides implementation details.","Abstraction hides complexity.",90.11,1,1
+"Dynamic programming stores subproblem results.","DP avoids recomputation.",89.63,1,1
+"Hash table stores key value pairs using hashing.","Hash table enables fast lookup.",88.42,1,1
+"Heap is a complete binary tree following heap property.","Heap stores prioritized elements.",85.73,1,1
+"Backtracking explores all possible solutions recursively.","Backtracking tries possibilities.",86.92,1,1
+"Sliding window processes subarrays efficiently.","Sliding window reduces complexity.",85.66,1,1
+"Two pointer technique uses two indices for traversal.","Two pointer approach optimizes searching.",87.84,1,1
+"Cycle in linked list forms a loop.","Linked list cycle creates infinite traversal.",88.61,1,1
+"Recursion uses self-calling functions while iteration uses loops.","Iteration uses loops and recursion uses function calls.",91.14,1,1
+"Kadane algorithm finds maximum subarray sum.","Kadane solves maximum sum subarray.",89.95,1,1
+"A stack follows FIFO principle.","Stack removes oldest element first.",21.34,0,0
+"Queue follows FIFO order.","Queue removes latest element first.",18.47,0,0
+"Binary search works only on sorted arrays.","Binary search works on unsorted arrays.",14.83,0,0
+"Java is platform independent.","Java works only on Windows.",11.24,0,0
+"JVM executes bytecode.","JVM is a database software.",9.63,0,0
+"Encapsulation hides data.","Encapsulation increases hardware speed.",7.22,0,0
+"Polymorphism supports multiple forms.","Polymorphism means variable declaration only.",13.17,0,0
+"Abstraction hides implementation details.","Abstraction means exposing all details.",12.45,0,0
+"Recursion uses function calls.","Recursion is a sorting algorithm.",16.88,0,0
+"Dynamic programming avoids repeated calculations.","Dynamic programming is used only in networking.",10.54,0,0
+"Graph contains vertices and edges.","Graph stores only integers.",8.41,0,0
+"Array stores elements contiguously.","Array stores random unrelated data.",14.72,0,0
+"Queue follows FIFO.","Queue uses random insertion.",17.81,0,0
+"Linked list uses nodes.","Linked list stores data in tables.",12.65,0,0
+"Big O measures complexity.","Big O is a database command.",10.94,0,0
+"Heap is a tree structure.","Heap is a linked list.",18.23,0,0
+"Backtracking explores solutions.","Backtracking deletes memory.",9.85,0,0
+"Sliding window optimizes subarray problems.","Sliding window is used for graphics only.",8.55,0,0
+"Two pointer technique uses two indices.","Two pointer means two variables.",22.15,0,0
+"BST keeps elements sorted.","BST stores data randomly.",16.74,0,0
+"Time complexity measures runtime growth.","Time complexity measures internet speed.",11.84,0,0
+"Space complexity measures memory usage.","Space complexity means CPU temperature.",9.62,0,0
+"Sorting arranges data.","Sorting encrypts data.",15.92,0,0
+"Searching finds target elements.","Searching deletes files.",12.47,0,0
+"Binary tree has two children maximum.","Binary tree always has three children.",14.38,0,0
+"Class is blueprint for objects.","Class is a database server.",8.74,0,0
+"Object is instance of class.","Object is a programming language.",11.17,0,0
+"JDK contains development tools.","JDK is a web browser.",10.44,0,0
+"JRE runs Java programs.","JRE edits images.",7.95,0,0
+"Hash table uses hashing.","Hash table stores videos.",13.61,0,0
+"Java supports multithreading.","Java allows concurrent execution of threads.",90.54,1,1
+"Method overriding changes parent method behavior.","Method overriding redefines inherited method.",89.32,1,1
+"Constructor initializes objects.","Constructor initializes data members.",91.62,1,1
+"Interface provides abstraction.","Interface supports multiple inheritance.",88.47,1,1
+"Exception handling manages runtime errors.","Exception handling prevents crashes.",89.17,1,1
+"Garbage collection frees unused memory.","Garbage collector removes unused objects.",92.22,1,1
+"String is immutable in Java.","Java strings cannot be modified.",91.13,1,1
+"ArrayList is dynamic in size.","ArrayList resizes automatically.",90.46,1,1
+"HashMap stores key value pairs.","HashMap uses hashing internally.",89.63,1,1
+"Thread is lightweight process.","Thread executes tasks independently.",88.91,1,1
+"Deadlock occurs when threads wait indefinitely.","Deadlock blocks thread execution forever.",87.74,1,1
+"Synchronization controls thread access.","Synchronization avoids race conditions.",89.14,1,1
+"Compiler converts source code into bytecode.","Compiler translates code.",88.36,1,1
+"Interpreter executes instructions line by line.","Interpreter runs code directly.",89.22,1,1
+"Operating system manages hardware and software.","OS controls computer resources.",91.37,1,1
+"CPU is the brain of computer.","CPU executes instructions.",90.42,1,1
+"RAM is temporary memory.","RAM stores temporary data.",91.18,1,1
+"Database stores organized information.","Database manages structured data.",89.63,1,1
+"SQL is used to manage relational databases.","SQL queries databases.",90.52,1,1
+"Normalization removes redundancy.","Normalization organizes database tables.",88.94,1,1
+"Garbage collection increases internet speed.","Garbage collection boosts WiFi.",5.82,0,0
+"Exception handling manages runtime errors.","Exception handling creates hardware.",8.63,0,0
+"Synchronization controls shared resources.","Synchronization installs operating system.",7.24,0,0
+"HashMap stores key value pairs.","HashMap is image editing software.",10.74,0,0
+"Deadlock occurs due to resource waiting.","Deadlock improves processing speed.",6.95,0,0
+"Thread is lightweight process.","Thread is a database query.",9.34,0,0
+"SQL manages relational databases.","SQL is used for game design.",11.54,0,0
+"Normalization removes redundancy.","Normalization increases duplication.",14.61,0,0
+"CPU executes instructions.","CPU stores permanent data.",13.12,0,0
+"RAM is temporary memory.","RAM is a programming language.",10.42,0,0
+"Polymorphism provides flexibility by allowing one method to work in multiple ways depending on input or object type.","polymorphism means many forms",58.63,0,0
+"Java is a high-level, object-oriented programming language developed by Sun Microsystems that is widely used for building platform-independent applications.","Java is a high level programming language Java support object oriented programming Java is platform independent",82.61,1,1
+"The throws keyword specifies the type of exceptions a method can generate, allowing proper handling.","keyword used to declare exception within method",66.86,0,0
+"Multithreading is a programming concept where multiple threads execute concurrently within a single process to improve performance.","multi threading means multiple Threads work simultaneously",68.93,0,0
+"The final keyword is used to restrict modification, meaning a final variable cannot be reassigned, a final method cannot be overridden, and a final class cannot be inherited.","final keyword is used to add restriction in class method and variables",71.87,1,0
+"Java is a high-level, object-oriented programming language developed by Sun Microsystems that is widely used for building platform-independent applications.","Java is a high level programming language Java is platform independent",70.75,1,0
+"JRE is the runtime environment that executes Java bytecode and includes libraries and other files needed to run Java programs.","stands for Java Runtime environment",63.62,0,0
+A default constructor is either implicitly generated by the compiler or explicitly defined with no parameters.,default constructor means there is no parameters in the constructor,79.24,1,1
+"An object is a specific instance created from a class, used to access its variables and methods.",instance of the class,52.39,0,0
+Recursion is a programming technique where a function calls itself to solve a problem by breaking it down into smaller subproblems.,recursion means calling the function again and again,67.94,0,0
+A constructor is a special method in a class that is automatically called when an object is created to initialize its attributes.,constructor is used to analyse data members when object is created,63.79,0,0
+"An algorithm refers to a logical sequence of operations that takes input, processes it, and produces output.",algorithm is set of instruction which runs one by one,59.31,0,0
+"A stack is a linear data structure that follows the Last In First Out (LIFO) principle, where the last element added is the first one to be removed.",is a linear data structure which uses push pop methods and follows last in first out mechanism,47.68,0,0
+A data structure is a way of organizing and storing data so that it can be accessed and modified efficiently.,Data Structure is data structure,74.21,0,0
+"BFS uses a queue data structure and guarantees the shortest path in unweighted graphs, while DFS uses a stack and does not guarantee the shortest path.",PFS stands for breakfast such a question,16.27,0,0
+It is a method used to initialize object data and prepare the object for use after creation.,used to initialise data member when object is created,70.15,0,0
+Inheritance is an OOP principle where a new class (child/derived class) acquires properties and behaviors of an existing class (parent/base class).,inheritance is the process where child class inherit the properties of parent class,74.07,0,0

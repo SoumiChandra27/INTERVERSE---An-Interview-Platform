@@ -1,0 +1,139 @@
+/* =====================================================
+FOOTER
+===================================================== */
+.footer {
+  width: 100%;
+  background: #0c242f;
+  padding: 70px 80px 35px;
+  margin-top: 60px;
+}
+/* =====================================================
+TOP SECTION
+===================================================== */
+.footer-container {
+  display: grid;
+  grid-template-columns:
+  repeat(4, 1fr);
+  gap: 60px;
+  margin-bottom: 70px;
+}
+/* =====================================================
+COLUMN
+===================================================== */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.footer-column h3 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.footer-column a {
+  text-decoration: none;
+  color: #9da7b3;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.footer-column a:hover {
+  color: #1A998F;
+  transform: translateX(4px);
+}
+/* =====================================================
+BOTTOM
+===================================================== */
+.footer-bottom {
+  border-top:
+  1px solid rgba(255,255,255,0.08);
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+/* =====================================================
+BRAND
+===================================================== */
+.footer-brand h1 {
+  color: white;
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+.footer-brand p {
+  margin-top: 10px;
+  color: #9da7b3;
+  font-size: 16px;
+}
+/* =====================================================
+RIGHT
+===================================================== */
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 18px;
+}
+/* =====================================================
+SOCIALS
+===================================================== */
+.footer-socials {
+  display: flex;
+  gap: 18px;
+}
+.footer-socials a {
+  color: white;
+  font-size: 26px;
+  transition: 0.3s;
+}
+.footer-socials a:hover {
+  color: #1A998F;
+  transform: translateY(-3px);
+}
+/* =====================================================
+POLICY LINKS
+===================================================== */
+.footer-policy {
+  display: flex;
+  gap: 20px;
+}
+.footer-policy a {
+  text-decoration: none;
+  color: #9da7b3;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.footer-policy a:hover {
+  color: white;
+}
+/* =====================================================
+RESPONSIVE
+===================================================== */
+@media(max-width: 1000px) {
+  .footer-container {
+    grid-template-columns:
+    repeat(2, 1fr);
+  }
+}
+@media(max-width: 768px) {
+  .footer {
+    padding: 50px 25px 30px;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-right {
+    align-items: flex-start;
+  }
+  .footer-brand h1 {
+    font-size: 34px;
+  }
+}

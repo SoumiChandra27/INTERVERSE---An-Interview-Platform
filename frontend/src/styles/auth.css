@@ -1,0 +1,221 @@
+/* =====================================================
+GLOBAL
+===================================================== */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background:
+    linear-gradient(
+      135deg,
+      #C4CFCE,
+      #dce6e5,
+      #eef4f3
+    );
+  overflow-x: hidden;
+}
+/* =====================================================
+AUTH WRAPPER
+===================================================== */
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* =====================================================
+AUTH PAGE
+===================================================== */
+.auth-page {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+/* =====================================================
+AUTH CARD
+===================================================== */
+.auth-card {
+  width: 400px;
+  background:
+    rgba(255,255,255,0.72);
+  backdrop-filter: blur(14px);
+  border:
+    1px solid rgba(16,46,60,0.08);
+  border-radius: 30px;
+  padding: 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  box-shadow:
+    0 18px 40px rgba(16,46,60,0.12);
+  transition: 0.3s;
+}
+.auth-card:hover {
+  transform: translateY(-4px);
+}
+/* =====================================================
+LOGO
+===================================================== */
+.logo {
+  color: #102E3C;
+  font-size: 54px;
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 3px;
+}
+/* =====================================================
+SUBTITLE
+===================================================== */
+.subtitle {
+  color: #155665;
+  text-align: center;
+  margin-top: -10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+/* =====================================================
+INPUTS
+===================================================== */
+.auth-card input {
+  padding: 16px;
+  border-radius: 16px;
+  border:
+    1px solid rgba(16,46,60,0.08);
+  outline: none;
+  background:
+    rgba(255,255,255,0.9);
+  color: #102E3C;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.auth-card input:focus {
+  border-color: #1A998F;
+  box-shadow:
+    0 0 0 4px rgba(26,153,143,0.12);
+}
+.auth-card input::placeholder {
+  color: #6b7280;
+}
+/* =====================================================
+BUTTON
+===================================================== */
+.auth-card button {
+  padding: 16px;
+  border: none;
+  border-radius: 16px;
+  background:
+    linear-gradient(
+      90deg,
+      #1A998F,
+      #187F87
+    );
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.auth-card button:hover {
+  transform: translateY(-2px);
+  background:
+    linear-gradient(
+      90deg,
+      #187F87,
+      #155665
+    );
+  box-shadow:
+    0 12px 24px rgba(24,127,135,0.28);
+}
+/* =====================================================
+SWITCH AUTH
+===================================================== */
+.switch-auth {
+  color: #155665;
+  text-align: center;
+  font-size: 14px;
+}
+.switch-auth a {
+  color: #1A998F;
+  margin-left: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.switch-auth a:hover {
+  color: #102E3C;
+}
+/* =====================================================
+forgot-password
+===================================================== */
+.forgot-password a:hover {
+  color: #102E3C;
+}
+.forgot-password {
+  width: 100%;
+  text-align: center;
+  margin-top: -5px;
+  margin-bottom: 18px;
+}
+.forgot-password a {
+  color: #1A998F;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* =====================================================
+RESPONSIVE
+===================================================== */
+@media(max-width: 768px) {
+  .auth-navbar {
+    padding: 0 20px;
+  }
+  .nav-links {
+    gap: 18px;
+  }
+}
+@media(max-width: 500px) {
+  .auth-card {
+    width: 100%;
+    padding: 30px;
+  }
+  .logo {
+    font-size: 40px;
+  }
+  .auth-navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 15px;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+/* =====================================================
+PASSWORD BOX
+===================================================== */
+.password-box {
+  position: relative;
+  width: 100%;
+}
+/* =====================================================
+PASSWORD INPUT
+===================================================== */
+.password-box input {
+  width: 100%;
+  padding-right: 50px;
+}
+/* =====================================================
+EYE ICON
+===================================================== */
+.password-eye {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #155665;
+  font-size: 18px;
+}

@@ -1,0 +1,326 @@
+/* =====================================================
+GLOBAL
+===================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background:
+    linear-gradient(135deg,
+      #C4CFCE,
+      #dce6e5,
+      #eef4f3);
+  overflow-x: hidden;
+  color: #102E3C;
+}
+/* =====================================================
+DASHBOARD PAGE
+===================================================== */
+.dashboard-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* =====================================================
+MAIN CONTENT
+===================================================== */
+.dashboard-main {
+  flex: 1;
+  width: 100%;
+  padding-left: 1.5vw;
+  padding-right: 0.5vw;
+}
+/* =====================================================
+MAIN CONTAINER
+===================================================== */
+.main-container {
+  width: 100%;
+  max-width: 1450px;
+  margin: auto;
+}
+/* =====================================================
+TOPBAR
+===================================================== */
+.topbar {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.topbar h1 {
+  font-size: 58px;
+  font-weight: 800;
+  color: #102E3C;
+  padding-top: 20px;
+}
+.topbar span {
+  color: #1A998F;
+}
+.topbar p {
+  color: #155665;
+  font-size: 18px;
+}
+/* =====================================================
+DOMAIN GRID
+===================================================== */
+.domain-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  margin-bottom: 40px;
+}
+.domain-card {
+  background:
+    rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border:
+    1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 28px;
+  padding: 30px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+.domain-card:hover {
+  transform: translateY(-6px);
+}
+.domain-card h3 {
+  text-align: center;
+  font-size: 25px;
+  color: #102E3C;
+}
+.domain-card p {
+  text-align: center;
+  color: #155665;
+  font-size: 15px;
+  line-height: 1.6;
+}
+/* =====================================================
+SELECT
+===================================================== */
+.domain-card select {
+  width: 100%;
+  padding: 15px;
+  border-radius: 16px;
+  border:
+    1px solid #C4CFCE;
+  background: #eef4f3;
+  color: #102E3C;
+  outline: none;
+  font-size: 14px;
+  margin-top: 12px;
+}
+/* =====================================================
+BUTTONS
+===================================================== */
+.domain-card button,
+.show-more-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 16px;
+  background:
+    linear-gradient(90deg,
+      #1A998F,
+      #187F87);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 14px;
+  transition: 0.3s;
+}
+.domain-card button:hover,
+.show-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 12px 24px rgba(26, 153, 143, 0.3);
+}
+/* =====================================================
+STATS GRID
+===================================================== */
+.stats-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  margin-bottom: 40px;
+}
+.stat-card {
+  background:
+    rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 28px;
+  padding: 42px;
+  text-align: center;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+.stat-card h2 {
+  font-size: 56px;
+  color: #155665;
+  margin-bottom: 10px;
+}
+.stat-card p {
+  color: #187F87;
+  font-size: 16px;
+}
+/* =====================================================
+PANELS
+===================================================== */
+.interview-panel,
+.history-panel{
+  width:100%;
+  background:
+  rgba(255,255,255,0.75);
+  backdrop-filter:blur(10px);
+  border-radius:28px;
+  padding:35px;
+  margin-bottom:35px;
+  box-shadow:
+  0 10px 25px rgba(0,0,0,0.08);
+}
+.interview-panel h2,
+.history-panel h2{
+  text-align:center;
+  font-size:34px;
+  color:#102E3C;
+  margin-bottom:30px;
+}
+/* =====================================================
+HISTORY
+===================================================== */
+.history-list {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.history-card {
+  background: #eef4f3;
+  border:
+    1px solid #C4CFCE;
+  border-radius: 20px;
+  padding: 24px;
+  transition: 0.3s;
+}
+.history-card:hover {
+  transform: translateY(-4px);
+  border-color: #1A998F;
+}
+.history-card h3 {
+  font-size: 24px;
+  margin-bottom: 14px;
+  color: #102E3C;
+}
+.history-card p {
+  color: #155665;
+  margin-top: 6px;
+}
+/* =====================================================
+HISTORY TITLE
+===================================================== */
+.history-title {
+  width: 100%;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 800;
+  color: #102E3C;
+  position: relative;
+  margin-bottom: 52px;
+}
+/* Gradient text */
+.history-title span {
+  background-color: #155665;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* =====================================================
+SHOW MORE BUTTON
+===================================================== */
+.show-more-btn {
+  margin-top: 35px;
+}
+/* =====================================================
+SCROLLBAR
+===================================================== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #187F87;
+  border-radius: 20px;
+}
+/* =====================================================
+RESPONSIVE
+===================================================== */
+@media(max-width:900px) {
+  .dashboard-header {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    padding: 20px;
+  }
+  .header-right {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .dashboard-main {
+    padding: 10px;
+  }
+  .topbar h1 {
+    font-size: 40px;
+  }
+  .domain-grid,
+  .stats-grid,
+  .history-list {
+    grid-template-columns: 1fr;
+  }
+}
+@media(max-width:600px) {
+  .dashboard-main {
+    padding: 16px;
+  }
+  .topbar h1 {
+    font-size: 32px;
+  }
+  .topbar p {
+    font-size: 15px;
+  }
+  .domain-card,
+  .stat-card,
+  .history-panel {
+    padding: 24px;
+  }
+  .header-btn {
+    width: 100%;
+  }
+}
+.quick-duration {
+  width: 100%;
+  margin: 18px 0;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid #c7d1d1;
+  background: #eef3f3;
+  font-size: 15px;
+  color: #173042;
+  outline: none;
+  transition: 0.3s;
+}
+.quick-duration:focus {
+  border-color: #1aa39f;
+  box-shadow: 0 0 0 4px rgba(26,163,159,0.12);
+}

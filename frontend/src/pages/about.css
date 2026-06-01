@@ -1,0 +1,132 @@
+/* =====================================================
+ABOUT PAGE
+===================================================== */
+.about-page {
+  min-height: 100vh;
+  background:
+  linear-gradient(
+    135deg,
+    #C4CFCE,
+    #dce6e5,
+    #eef4f3
+  );
+  padding: 40px;
+}
+/* =====================================================
+HERO
+===================================================== */
+.about-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.about-hero h1 {
+  font-size: 56px;
+  color: #102E3C;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.about-hero span {
+  color: #1A998F;
+}
+.about-hero p {
+  max-width: 900px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #155665;
+}
+/* =====================================================
+ABOUT CONTAINER
+===================================================== */
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+/* =====================================================
+CARDS
+===================================================== */
+.about-card {
+  background:
+  rgba(255,255,255,0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 28px;
+  padding: 35px;
+  box-shadow:
+  0 10px 25px rgba(0,0,0,0.08);
+}
+.about-card h2 {
+  font-size: 32px;
+  color: #102E3C;
+  margin-bottom: 20px;
+}
+.about-card p {
+  color: #155665;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.about-card ul {
+  padding-left: 20px;
+}
+.about-card li {
+  margin-bottom: 14px;
+  color: #155665;
+  font-size: 16px;
+}
+/* =====================================================
+TECH SECTION
+===================================================== */
+.tech-section {
+  margin-top: 20px;
+}
+.tech-section h2 {
+  text-align: center;
+  font-size: 42px;
+  color: #102E3C;
+  margin-bottom: 35px;
+}
+.tech-grid {
+  display: grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(220px,1fr));
+  gap: 25px;
+}
+.tech-card {
+  background:
+  rgba(255,255,255,0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 30px;
+  text-align: center;
+  box-shadow:
+  0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+.tech-card:hover {
+  transform: translateY(-5px);
+}
+.tech-card h3 {
+  font-size: 24px;
+  color: #1A998F;
+  margin-bottom: 12px;
+}
+.tech-card p {
+  color: #155665;
+  font-size: 15px;
+}
+/* =====================================================
+RESPONSIVE
+===================================================== */
+@media(max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-hero h1 {
+    font-size: 42px;
+  }
+  .tech-section h2 {
+    font-size: 34px;
+  }
+}
