@@ -7,71 +7,123 @@ INTERVERSE is an AI-powered interview preparation platform designed to help user
 
 ## Features
 
-* User Registration and Login
-* AI-Based Interview Question Generation
-* Technical and HR Interview Practice
-* Semantic Answer Evaluation
-* Real-Time Feedback Generation
-* Text-to-Speech Support
-* Interview Performance Tracking
-* Secure Session-Based Authentication
-* Admin Dashboard for Management
+### Authentication
+- User Registration
+- User Login
+- JWT Authentication
+- Forgot Password
+- Reset Password
+
+### Interview System
+- Domain-based Interviews
+- Dynamic Question Selection
+- Adaptive Difficulty Progression
+- Real-Time Interview Chat Interface
+- Timer-Based Interview Sessions
+
+### Answer Evaluation
+- Semantic Similarity Analysis
+- Logical Answer Validation
+- Score Generation
+- Feedback Generation
+
+### Analytics
+- Interview History
+- Performance Dashboard
+- Score Visualization
+- Session Analytics
+
+### Speech Features
+- Text-to-Speech Questions
+- Speech-Based Answer Input
+
+---
 
 ## Technologies Used
 
 ### Frontend
-
-* HTML
-* CSS
-* JavaScript
+- React.js
+- React Router
+- Axios
+- Recharts
+- CSS
 
 ### Backend
+- FastAPI
+- SQLAlchemy
+- SQLite
+- JWT Authentication
 
-* Python
-* Flask
+### NLP Models
+- Sentence-BERT (all-MiniLM-L6-v2)
+- RoBERTa (roberta-large-mnli)
 
-### Database
-
-* MySQL
-
-### Machine Learning & NLP
-
-* RoBERTa
-* Sentence-BERT (all-MiniLM-L6-v2)
-* Transformers
-* Scikit-learn
-
-### Additional Libraries
-
-* gTTS / Text-to-Speech
-* NumPy
-* Pandas
+### Other Libraries
+- Pandas
+- Transformers
+- Sentence Transformers
+- Scikit-Learn
 
 ---
 
 ## Project Structure
 
 ```text
-INTERVERSE/
+INTERVERSE
 │
-├── backend/
-│   ├── models/
-│   ├── routes/
-│   ├── static/
-│   ├── templates/
-│   ├── server.py
-│   └── requirements.txt
+├── backend
+│   │
+│   ├── app
+│   │   ├── ai
+│   │   │   
+│   │   ├── core
+│   │   │
+│   │   ├── database
+│   │   │
+│   │   ├── routes
+│   │   │
+│   │   ├── schemas
+│   │   │
+│   │   ├── services
+│   │   │
+│   │   ├── __init__.py
+│   │   └── main.py
+│   │
+│   ├── data
+│   │   └── Interview1_dataset.csv
+│   │
+│   ├── evaluation_dataset.csv
+│   ├── evaluation_metrics.py
+│   ├── import_questions.py
+│   ├── intervrse.db
+│   ├── requirements.txt
+│   └── run.py
 │
-├── frontend/
-│   ├── css/
-│   ├── js/
-│   └── images/
-│
-├── database/
-│   └── interverse.sql
+├── frontend
+│   │
+│   ├── public
+│   │
+│   ├── src
+│   │   ├── assets
+│   │   ├── components
+│   │   ├── context
+│   │   ├── hooks
+│   │   ├── layouts
+│   │   ├── pages
+│   │   ├── services
+│   │   ├── styles
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   │
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── vite.config.js
+│   ├── eslint.config.js
+│   └── requirements_frontend.txt
 │
 ├── README.md
-└── .gitignore
+
 ```
 
 ## Installation Guide
@@ -109,31 +161,14 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 5. Configure Database
 
-1. Install MySQL.
-2. Create a database named:
-
-```sql
-CREATE DATABASE interverse;
-```
-
-3. Import the SQL file:
+### 5. Run the Application
 
 ```bash
-mysql -u root -p interverse < database/interverse.sql
+python run.py inside backend terminal
 ```
-
-### 6. Run the Application
-
 ```bash
-python server.py
-```
-
-### 7. Open in Browser
-
-```text
-http://localhost:5000
+npm run dev inside frontend terminal
 ```
 
 ---
