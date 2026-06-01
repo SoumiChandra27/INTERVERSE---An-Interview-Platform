@@ -3,7 +3,7 @@ INTERVERSE is an interview preparation platform designed to  conduct interactive
 
 ## Overview
 
-INTERVERSE is an AI-powered interview preparation platform designed to help users practice interviews in a realistic environment. The platform generates interview questions, evaluates candidate answers using semantic similarity techniques, provides instant feedback, and supports voice-based interaction to improve communication skills and interview confidence.
+The system automatically evaluates answers based on semantic meaning, provides instant feedback, tracks performance, supports multiple technical domains and supports voice-based interaction to improve communication skills and interview confidence.
 
 ## Features
 
